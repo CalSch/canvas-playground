@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Playground</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="" id="icon">
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Canvas Playground</h1>
+    </header>
+
+    <main>
+        <div class="layout-tabs">
+            <div id="tabs">
+                Loading...
+            </div>
+
+            <div class="new" onclick="newTab()">+</div>
+        </div>
+        <div class="layout-code">
+            Code here:
+            <div id="code"></div>
+            
+            <div class="center-v">
+                <label for="autodraw">Autodraw:</label>
+                <input type="checkbox" name="autodraw" id="autodraw">
+            </div>
+            
+            <label for="time">Autodraw speed (seconds between draws): </label>
+            <input style="width:60px" type="number" name="time" id="time" min="0" value="0.5" step="0.1">
+        
+            <br>
+            <button onclick="_draw()">Draw</button>
+        </div>
+        <div class="layout-image">
+            Canvas here:
+            <br>
+            <canvas id="img"></canvas>
+        </div>
+        <div class="layout-log">
+            Log:
+            <pre id="log"></pre>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <!-- <p><a href="https://github.com/CalSch/image-maker">GitHub Repo</a></p> -->
+			<p>Made by <a href="https://github.com/CalSch">CalSch</a></p>
+			<p>Uses the <a href="https://microsoft.github.io/monaco" target="_blank">Monaco Editor</a></p>
+		</div>
+    </footer>
+
+
+    <script src="monaco/min/vs/loader.js"></script>
+    <script src="editor.js"></script>
+
+    <script src="draw.js"></script>
+    <script onload="emmetLoad()" src="emmet.js"></script>
+
+</body>
+</html>

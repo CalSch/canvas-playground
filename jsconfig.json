@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "DOM",
+            "ES6"
+        ]
+    },
+    "files": ["editor.js","draw.js","img-lib.js","emmet.js"],
+    "include": [
+    ],
+    "exclude": [
+        "monaco/",
+        "docs/",
+        ".git/",
+    ]
+}
