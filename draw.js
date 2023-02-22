@@ -13,8 +13,8 @@ function clear() {
     logEl.innerHTML=""
 }
 
-let width=100;
-let height=100;
+let width=600;
+let height=300;
 
 c.width=width;
 c.height=height;
